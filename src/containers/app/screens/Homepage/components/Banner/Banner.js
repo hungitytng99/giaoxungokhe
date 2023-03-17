@@ -30,6 +30,7 @@ function Banner({ name }) {
                         className="banner__name boy"
                         style={{
                             '--delay': '0s',
+                            whiteSpace: 'nowrap',
                         }}
                     >
                         Gặp mặt đồng hương Ngô Khê
