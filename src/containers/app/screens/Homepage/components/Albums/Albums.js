@@ -22,18 +22,11 @@ function Albums({ name }) {
         setViewerIsOpen(false);
     };
 
-    const [gallery, setGallery] = useState(shuffleArray(galleryPhoto).splice(0, 12));
-    function refreshGallery() {
-        const newGallery = [...galleryPhoto];
-        setGallery(shuffleArray(newGallery).splice(0, 12));
-    }
+    const [gallery, setGallery] = useState(galleryPhoto);
     return (
         <div name={name} className="albums flex-center">
             <img src={SecTitleFlower}></img>
             <div className="albums__title">Ảnh lưu niệm</div>
-            <div className="albums__refresh">
-                <AppButton title="Xem thêm ảnh" onClick={refreshGallery}></AppButton>
-            </div>
             <div className="gallery">
                 <Gallery photos={gallery} onClick={openLightbox} />
                 <ModalGateway>

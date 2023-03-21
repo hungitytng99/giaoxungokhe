@@ -1,10 +1,8 @@
 import { useRef } from 'react';
-import useIsInViewport from '~/hooks/useIsInViewPort';
 import SecTitleFlower from '~/assets/images/bg/sec-title-flower.png';
-import DSC_0969_min from '~/assets/images/wedding/DSC_0969-min.jpg';
-import DSC_0976_min from '~/assets/images/wedding/DSC_0976-min.jpg';
-import './BrideGroom.sass';
+import useIsInViewport from '~/hooks/useIsInViewPort';
 import Timeline from '../Timeline';
+import './BrideGroom.sass';
 
 function BrideGroom({ name }) {
     const viewRef = useRef(null);

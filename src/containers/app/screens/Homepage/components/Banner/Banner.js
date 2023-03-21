@@ -24,7 +24,7 @@ function Banner({ name }) {
                     <img src={image_main_2} />
                 </div>
             </Carousel>
-            <div className={`banner__intro flex-center ${isInViewPort && 'active'}`}>
+            {/* <div className={`banner__intro flex-center ${isInViewPort && 'active'}`}>
                 <div className="banner__box flex-center">
                     <div
                         className="banner__name boy"
@@ -44,7 +44,7 @@ function Banner({ name }) {
                 >
                     29/4/2023 - 02/05/2023
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

@@ -29,6 +29,10 @@ const TIMELINES = [
         timeline: ['9h30 : Thánh lễ mừng kính Thánh Giuse quan thày', '11h00: Tiệc mừng chung '],
         logoWidth: 36,
         spaceBottom: 60,
+        durationStyle: {
+            color: '#DC0000',
+            fontWeight: 700,
+        }
     },
     {
         duration: 'Ngày 2.5, thứ Ba',
@@ -47,7 +51,7 @@ function Timeline({ isStartAnimation }) {
                 return (
                     <div key={index}>
                         <div className={cx('block', isRight ? 'right' : 'left')} style={{ '--delay': `${index}s` }}>
-                            <div className={cx('title')}>{timeline.duration}</div>
+                            <div className={cx('title')} style={timeline?.durationStyle ?? {}}>{timeline.duration}</div>
                             <ul>
                                 {(timeline?.timeline ?? []).map((time, index) => (
                                     <li className={cx('description')} key={index}>
